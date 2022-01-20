@@ -57,7 +57,7 @@ async function yPlay(query) {
             .then((data) => {
                 const url = []
                 const pormat = data.all
-                for (let i = 1; i < pormat.length; i) {
+                for (let i = 0; i < pormat.length; i++) {
                     if (pormat[i].type == 'video') {
                         let dapet = pormat[i]
                         url.push(dapet.url)
@@ -69,7 +69,7 @@ async function yPlay(query) {
                     let pormat = data.formats
                     let audio = []
                     let video = []
-                    for (let i = 1; i < pormat.length; i++) {
+                    for (let i = 0; i < pormat.length; i++) {
                     if (pormat[i].container == 'mp4' && pormat[i].hasVideo == true && pormat[i].hasAudio == true) {
                         let vid = pormat[i]
                         video.push({
