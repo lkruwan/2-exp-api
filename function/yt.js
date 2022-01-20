@@ -90,13 +90,14 @@ async function yPlay(query) {
                     const channel = data.player_response.microformat.playerMicroformatRenderer.ownerChannelName
                     const views = data.player_response.microformat.playerMicroformatRenderer.viewCount
                     const published = data.player_response.microformat.playerMicroformatRenderer.publishDate
+                    const fullurl = "https://www.youtube.com/watch?v="+id
                     const result = {
                     title: title,
                     thumb: thumb,
                     channel: channel,
                     published: published,
                     views: views,
-                    yyu: id,
+                    YT_LINK: fullurl,
                     video: video,
                     audio: audio
                     }
