@@ -96,7 +96,7 @@ async function yPlay(query) {
                     channel: channel,
                     published: published,
                     views: views,
-                    yyu: yutub,
+                    yyu: id,
                     video: video,
                     audio: audio
                     }
