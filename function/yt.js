@@ -80,7 +80,7 @@ async function yPlay(query) {
                     if (pormat[i].mimeType == 'audio/webm; codecs=\"opus\"') {
                         let aud = pormat[i]
                         audio.push({
-                        bitrate: aud.audioBitrate,
+                        bitrate: 64,
                         url: aud.url
                         })
                     }
