@@ -77,11 +77,11 @@ async function yPlay(query) {
                         url: vid.url
                         })
                     }
-                    if (pormat[i].mimeType == 'audio/webm; codecs=\"opus\"') {
+                    if (pormat[i].mimeType == 'audio') {
                         let aud = pormat[i]
                         audio.push({
                         bitrate: 64,
-                        url: 64
+                        url: aud.url
                         })
                     }
                     }
