@@ -8,8 +8,8 @@ async function yDonlod(url) {
       const yutub = yt.getInfo(`https://www.youtube.com/watch?v=${id}`)
       .then((data) => {
         let pormat = data.formats
-        let audio = []
-        let video = []
+        let audio = {}
+        let video = {}
         for (let i = 0; i < pormat.length; i++) {
           if (pormat[i].container == 'mp4' && pormat[i].hasVideo == true && pormat[i].hasAudio == true) {
             let vid = pormat[i]
@@ -67,8 +67,8 @@ async function yPlay(query) {
                 const yutub = yt.getInfo(`https://www.youtube.com/watch?v=${id}`)
                 .then((data) => {
                     let pormat = data.formats
-                    let audio = []
-                    let video = []
+                    let audio = {}
+                    let video = {}
                     for (let i = 0; i < pormat.length; i++) {
                     if (pormat[i].container == 'mp4' && pormat[i].hasVideo == true && pormat[i].hasAudio == true) {
                         let vid = pormat[i]
