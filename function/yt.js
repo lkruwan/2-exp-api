@@ -81,7 +81,7 @@ async function yPlay(query) {
                         let aud = pormat[i]
                         audio.push({
                         bitrate: 64,
-                        url: aud.url
+                        url: 64
                         })
                     }
                     }
