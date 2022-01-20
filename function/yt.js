@@ -68,11 +68,11 @@ async function yPlay(query) {
                 .then((data) => {
                     let pormat = data.formats
                     let audio = []
-                    let cocc = []
+                    let video = []
                     for (let i = 0; i < pormat.length; i++) {
                     if (pormat[i].container == 'mp4' && pormat[i].hasVideo == true && pormat[i].hasAudio == true) {
                         let vid = pormat[i]
-                        cocc.push({
+                        video.push({
                         quality: vid.qualityLabel,
                         url: vid.url
                         })
@@ -96,6 +96,7 @@ async function yPlay(query) {
                     channel: channel,
                     published: published,
                     views: views,
+                    yyu: yutub,
                     video: video,
                     audio: audio
                     }
