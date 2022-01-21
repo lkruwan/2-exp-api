@@ -80,8 +80,8 @@ async function yPlay(query) {
                     if (pormat[i].mimeType == 'audio') {
                         let aud = pormat[i]
                         audio.push({
-                        bitrate: 64,
-                        url: aud.url
+                        bitrate: aud.audioBitrate,
+                        aud.audioBitrate+"_"+url: aud.url
                         })
                     }
                     }
