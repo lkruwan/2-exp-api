@@ -31,7 +31,9 @@ async function yDonlod(url) {
         const channel = data.player_response.microformat.playerMicroformatRenderer.ownerChannelName
         const views = data.player_response.microformat.playerMicroformatRenderer.viewCount
         const published = data.player_response.microformat.playerMicroformatRenderer.publishDate
+        const prtgt = "kaviyaah"
         const result = {
+          powerd: prtgt,
           title: title,
           thumb: thumb,
           channel: channel,
